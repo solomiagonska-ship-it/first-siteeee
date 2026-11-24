@@ -1,0 +1,95 @@
+/* 1. Глобальне налаштування */
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+/* 2. Сторінка */
+body {
+font-family: Arial, sans-serif;
+background-color: #f1f5f9;
+margin: 0;
+padding: 40px 20px;
+}
+/* 3. Заголовок */
+#store-title {
+text-align: center;
+font-size: 32px;
+text-transform: uppercase;
+color: #0f172a;
+margin: 0 0 40px 0;
+}
+
+/* Завдання 3.1: Контейнер карток (Flexbox) */
+.products-container {
+display: flex;
+justify-content: center;
+align-items: stretch;
+gap: 24px;
+flex-wrap: wrap;
+}
+
+/* 4. Картка товару + Завдання 3.2: Внутрішнє вирівнювання */
+.product-card {
+width: 280px;
+background-color: #ffffff;
+border: 2px solid #cbd5e1;
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+
+/* Flexbox всередині картки */
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+/* 5. Зображення */
+.product-img {
+width: 100%;
+height: 160px;
+border: 1px solid #e2e8f0;
+border-radius: 6px;
+margin-bottom: 15px;
+}
+
+/* 6. Назва товару */
+.product-title {
+font-size: 18px;
+font-weight: bold;
+color: #1e293b;
+margin: 0 0 10px 0;
+}
+
+/* 7. Опис товару */
+.product-desc {
+font-size: 14px;
+line-height: 1.5;
+color: #64748b;
+margin: 0 0 15px 0;
+}
+
+/* 8. Ціна */
+.product-price {
+font-size: 20px;
+font-weight: bold;
+color: #2563eb;
+margin: 0 0 15px 0;
+}
+
+/* 9. Кнопка + Завдання 3.2 (margin-top: auto) */
+.btn-buy {
+display: inline-block;
+padding: 10px 24px;
+background-color: #2563eb;
+color: #ffffff;
+text-decoration: none;
+font-weight: bold;
+font-size: 14px;
+border-radius: 6px;
+margin-top: auto;
+}
+
+/* Завдання 3.3: Інтерактивність (бонус) */
+.btn-buy:hover {
+background-color: #1d4ed8;
+}
